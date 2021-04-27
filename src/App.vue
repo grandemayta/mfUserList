@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header />
+  <div class="container">
+    <h1>mfUserDetail</h1>
+  </div>
+  
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import { defineAsyncComponent } from 'vue';
+  const Header = defineAsyncComponent(() => import('mfUserList/Header'));
+  const Footer = defineAsyncComponent(() => import('mfUserList/Footer'));
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Footer
+    }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-width: 1024px;
+  padding: 20px;
 }
 </style>

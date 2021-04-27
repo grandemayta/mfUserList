@@ -1,4 +1,8 @@
-# mf-user-detail
+# MFUserDetail
+This application is part of a Micro Frontend Demo done with ModuleFederation and Vue 3.
+
+- Microfrontend 1 -> [mfUserList](https://github.com/grandemayta/mfUserList)
+- Microfrontend 2 -> [mfUserDetail](https://github.com/grandemayta/mfUserDetail)
 
 ## Project setup
 ```
@@ -13,11 +17,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration

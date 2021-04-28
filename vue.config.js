@@ -12,7 +12,7 @@ module.exports = {
         name: "mfUserList",
         filename: "remoteEntry.js",
         remotes: {
-          mfVueShell: 'mfVueShel@http://localhost:8081/remoteEntry.js',
+          mfVueShell: 'mfVueShell@http://localhost:8081/remoteEntry.js',
         },
         exposes: {
           './UserList': './src/pages/UserList.vue'

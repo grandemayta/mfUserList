@@ -9,12 +9,14 @@ module.exports = {
     config
       .plugin('module-federation-plugin')
       .use(require('webpack').container.ModuleFederationPlugin, [{
-        name: "mfUserDetail",
+        name: "mfUserList",
         filename: "remoteEntry.js",
         remotes: {
-          mfUserList: 'mfUserList@http://localhost:8081/remoteEntry.js',
+          mfVueShell: 'mfVueShel@http://localhost:8081/remoteEntry.js',
         },
-        exposes: {},
+        exposes: {
+          './UserList': './src/pages/UserList.vue'
+        },
         shared: {
           "vue": {
             eager: true,

@@ -1,22 +1,19 @@
 <template>
   <Header />
-  <div class="container">
-    <h1>mfUserDetail</h1>
-  </div>
-  
+  <UserList />
   <Footer />
 </template>
 
 <script>
   import { defineAsyncComponent } from 'vue';
-  const Header = defineAsyncComponent(() => import('mfUserList/Header'));
-  const Footer = defineAsyncComponent(() => import('mfUserList/Footer'));
+  import UserList from './pages/UserList';
 
   export default {
     name: 'App',
     components: {
-      Header,
-      Footer
+      Header: defineAsyncComponent(() => import('mfVueShell/Header')),
+      Footer: defineAsyncComponent(() => import('mfVueShell/Footer')),
+      UserList
     }
 }
 </script>
@@ -26,9 +23,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.container {
-  min-width: 1024px;
-  padding: 20px;
 }
 </style>

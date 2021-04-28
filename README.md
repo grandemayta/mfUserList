@@ -1,6 +1,7 @@
 # MFUserList
 This application is part of a Micro Frontend Demo done with ModuleFederation and Vue 3.
 
+- Shell -> [mfVueShell](https://github.com/grandemayta/mfVueShell)
 - Microfrontend 1 -> [mfUserList](https://github.com/grandemayta/mfUserList)
 - Microfrontend 2 -> [mfUserDetail](https://github.com/grandemayta/mfUserDetail)
 
